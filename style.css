@@ -1,54 +1,9 @@
 body{
     min-height: 100em;
-    background: rgb(48,115,228);
-    background: radial-gradient(circle, rgb(63, 126, 235) 0%, rgb(32, 0, 157) 100%);
+    background: rgb(70,70,70);
+background: linear-gradient(0deg, rgba(70,70,70,1) 0%, rgba(10,10,10,1) 100%);
 }
-h1{
-    font-family: 'Lobster', cursive;
-    color: aliceblue;
-    font-size: 42px;
-}
-h2{
-    font-family: 'Lobster', cursive;
-    color: rgb(255, 195, 54);
-    font-size: 32px;
-}
-p{
-    color: aliceblue;
-    font-family: 'Roboto' ,sans-serif;
-    font-weight: 800;
-    font-size: 22px;
-}
-.program p{
-    color: aliceblue;
-    font-family: 'Roboto' ,sans-serif;
-    font-weight: 800;
-    font-size: 24px;
-}
-.pravidla{
-    color: aliceblue;
-    font-family: sans-serif;
-}
-.contact img{
-    max-height: 120px;
-}
-.pravidla a{
-    color: rgb(112, 187, 252);
-}
-.pravidla li{
-    text-align: left;
-    font-weight: 600;
-    font-size: 20px;
-}
-.cervena{
-    color: rgb(255, 70, 70);
-}
-.program h3{
-    color: rgb(207, 233, 255);
-    font-family: sans-serif;
-    font-size: 14px;
 
-}
 .content{
     display: flex;
     flex-direction: column;
@@ -66,15 +21,32 @@ p{
     .logo{
         max-width: 60%;
     }
-    h1{
-        font-size: 34px;
+
+ }
+h1{
+    font-family: sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: rgb(214, 214, 214);
+
+}
+ h3:before {
+    content: attr(data-text);
+    position: absolute;
+    overflow: hidden;
+    max-width: 7em;
+    white-space: nowrap;
+    color: rgba(215, 215, 215, 0.658);
+    animation: loading 15s infinite;
+}
+@keyframes loading {
+    0% {
+        max-width: 0;
     }
-    p{
-        font-size: 14px;
-    }
-  }
-  @media(min-width: 1000px) {
-    .contact img{
-        max-height: 350px;
-    }
-  }
+}
+h3{
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(105, 105, 105);
+}
